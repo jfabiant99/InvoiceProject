@@ -1,0 +1,12 @@
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\Domain.dll
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\Domain.pdb
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\obj\Debug\Domain.dll
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\obj\Debug\Domain.pdb
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\Domain.dll.config
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\EntityFramework.dll
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\EntityFramework.xml
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JOHN\source\repos\InvoiceProject\Domain\obj\Debug\Domain.csproj.CopyComplete
