@@ -173,7 +173,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Request\Product_Request_v1.cs" />
+    <Compile Include="Models\Request\User_Request_v1.cs" />
     <Compile Include="Models\Response\Product_Response_v1.cs" />
+    <Compile Include="Models\Response\User_Response_v1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -263,6 +265,10 @@
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{AE02BD87-908A-44CA-AA34-B209B4EC0725}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructure\Infraestructure.csproj">
+      <Project>{1A86BC24-E06D-4B18-AE24-258B27020D3D}</Project>
+      <Name>Infraestructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\Service\Service.csproj">
       <Project>{37E49A0E-F046-4F33-9ACC-5777539C0EF3}</Project>

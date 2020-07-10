@@ -1,3 +1,4 @@
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.csproj.CoreCompileInputs.cache
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\InvoiceAPI.dll.config
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\InvoiceAPI.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\InvoiceAPI.pdb
@@ -51,7 +52,11 @@ C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\roslyn\vbc.rsp
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\roslyn\VBCSCompiler.exe
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Antlr3.Runtime.dll
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\AutoMapper.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Domain.dll
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\EntityFramework.dll
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Infraestructure.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Newtonsoft.Json.dll
@@ -67,12 +72,14 @@ C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\System.Web.WebPages.Dep
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\System.Web.WebPages.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\System.Web.WebPages.Razor.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\WebGrease.dll
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Infraestructure.dll
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\EntityFramework.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Domain.pdb
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Domain.dll.config
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Infraestructure.pdb
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Infraestructure.dll.config
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Service.pdb
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Service.dll.config
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\EntityFramework.xml
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\EntityFramework.SqlServer.xml
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Newtonsoft.Json.xml
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\System.Net.Http.Formatting.xml
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\System.Web.Helpers.xml
@@ -86,9 +93,6 @@ C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\System.Web.WebPages.Dep
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\System.Web.WebPages.Razor.xml
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Antlr3.Runtime.pdb
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Infraestructure.pdb
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\Infraestructure.dll.config
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\EntityFramework.xml
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\es\System.Net.Http.Formatting.resources.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\es\System.Web.Helpers.resources.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\es\System.Web.Http.resources.dll
@@ -99,11 +103,6 @@ C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\es\System.Web.Razor.res
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\es\System.Web.WebPages.resources.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.csprojAssemblyReference.cache
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.csproj.CoreCompileInputs.cache
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.csproj.CopyComplete
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.pdb
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\EntityFramework.SqlServer.dll
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\EntityFramework.SqlServer.xml
-C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\AutoMapper.dll
