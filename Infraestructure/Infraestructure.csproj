@@ -53,13 +53,9 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="InvoiceContext.cs" />
-    <Compile Include="Migrations\202007050642521_v1.cs" />
-    <Compile Include="Migrations\202007050642521_v1.designer.cs">
-      <DependentUpon>202007050642521_v1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202007051103187_v2.cs" />
-    <Compile Include="Migrations\202007051103187_v2.designer.cs">
-      <DependentUpon>202007051103187_v2.cs</DependentUpon>
+    <Compile Include="Migrations\202007101354297_v1.cs" />
+    <Compile Include="Migrations\202007101354297_v1.designer.cs">
+      <DependentUpon>202007101354297_v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,11 +71,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202007050642521_v1.resx">
-      <DependentUpon>202007050642521_v1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202007051103187_v2.resx">
-      <DependentUpon>202007051103187_v2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202007101354297_v1.resx">
+      <DependentUpon>202007101354297_v1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

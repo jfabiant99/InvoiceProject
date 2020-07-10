@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class b1 : DbMigration
+    public partial class v1 : DbMigration
     {
         public override void Up()
         {
@@ -31,8 +31,8 @@
                 c => new
                     {
                         UserID = c.Int(nullable: false, identity: true),
-                        Username = c.String(),
-                        Password = c.String(),
+                        Username = c.String(maxLength: 150),
+                        Password = c.String(maxLength: 150),
                         UserTypeID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.UserID)
@@ -63,11 +63,11 @@
                 c => new
                     {
                         ProductID = c.Int(nullable: false, identity: true),
-                        ProductName = c.String(),
-                        Price = c.Int(nullable: false),
+                        ProductName = c.String(maxLength: 150),
+                        Price = c.Double(nullable: false),
                         Stock = c.Int(nullable: false),
-                        CreatedBy = c.String(),
-                        ModifiedBy = c.String(),
+                        CreatedBy = c.String(maxLength: 150),
+                        ModifiedBy = c.String(maxLength: 150),
                         CreatedOn = c.DateTime(nullable: false),
                         ModifiedOn = c.DateTime(nullable: false),
                         Enable = c.Boolean(nullable: false),

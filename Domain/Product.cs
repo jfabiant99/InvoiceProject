@@ -14,8 +14,6 @@ namespace Domain
         [StringLength(150, MinimumLength =3)]
         public string ProductName { get; set; }
         public double Price { get; set; }
-        
-        [Range(0,3)]
         public int Stock { get; set; }
 
         //Campos de Auditoria

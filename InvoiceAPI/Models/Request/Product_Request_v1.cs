@@ -10,6 +10,7 @@ namespace InvoiceAPI.Models.Request
         public string ProductName { get; set; }
         public int Price { get; set; }
         public int Stock { get; set; }
+        public string CreatedBy { get; set; }
 
     }
 }

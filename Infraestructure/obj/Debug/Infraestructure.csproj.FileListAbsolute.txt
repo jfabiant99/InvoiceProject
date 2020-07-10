@@ -15,4 +15,3 @@ C:\Users\JOHN\source\repos\InvoiceProject\Infraestructure\obj\Debug\Infraestruct
 C:\Users\JOHN\source\repos\InvoiceProject\Infraestructure\bin\Debug\Domain.dll.config
 C:\Users\JOHN\source\repos\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.Migrations.v1.resources
 C:\Users\JOHN\source\repos\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.csproj.GenerateResource.cache
-C:\Users\JOHN\source\repos\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.Migrations.v2.resources

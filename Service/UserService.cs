@@ -1,10 +1,10 @@
 ﻿using System;
+using Infraestructure;
+using Domain;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Infraestructure;
-using Domain;
 using System.Security.Cryptography;
 
 namespace Service
@@ -52,6 +52,16 @@ namespace Service
 
                 context.SaveChanges();
 
+            }
+        }
+
+        public void Delete(int id)
+        {
+            using (var context = new InvoiceContext())
+            {
+                var user = context.Users.Find(id);
+                context.Users.Remove(user);
+                context.SaveChanges();
             }
         }
 

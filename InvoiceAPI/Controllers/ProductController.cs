@@ -31,18 +31,37 @@ namespace InvoiceAPI.Controllers
                             }).ToList();
             return response;
         }
-
+        public Product_Response_v1 Get(int id)
+        {
+            Product product = service.GetById(id);
+            Product_Response_v1 response = new Product_Response_v1();
+            response.ProductID = product.ProductID;
+            response.ProductName = product.ProductName;
+            response.Price = product.Price;
+            response.Stock = product.Stock;
+            return response;
+        }
         public void Post([FromBody] Product_Request_v1 request)
         {
-            //Ingreso un objeto de tipo Product_Request_v1
-            //TRANSFORMAR
-            //Necesito un objeto de tipo Product
             Product product = new Product();
             product.ProductName = request.ProductName;
             product.Price = request.Price;
             product.Stock = request.Stock;
+            product.CreatedBy = request.CreatedBy;
             service.Insert(product);
         }
+
+        [HttpPost]
+        public void Update([FromBody] Product request)
+        {
+            service.Update(request, request.ProductID);
+        }
+        [HttpPost]
+        public void Delete([FromBody] Product request)
+        {
+            service.Delete(request.ProductID);
+        }
+
 
     }
 }

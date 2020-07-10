@@ -106,3 +106,4 @@ C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\bin\es\System.Web.WebPages.
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.csproj.CopyComplete
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.dll
 C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.pdb
+C:\Users\JOHN\source\repos\InvoiceProject\InvoiceAPI\obj\Debug\InvoiceAPI.csprojAssemblyReference.cache

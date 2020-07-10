@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Infraestructure;
 using Domain;
+using System.Data.Entity.Validation;
 
 namespace Service
 {
@@ -16,7 +17,7 @@ namespace Service
             using (var context = new InvoiceContext())
             {
 
-                products = context.Products.ToList();
+                products = context.Products.Where(p => p.Enable == true).ToList();
 
             }
             return products;
@@ -28,7 +29,7 @@ namespace Service
 
             using (var context = new InvoiceContext())
             {
-                product = context.Products.Find(ID);
+                product = context.Products.Where(p => p.Enable == true).FirstOrDefault();
             }
 
             return product;
@@ -39,9 +40,9 @@ namespace Service
             using (var context = new InvoiceContext())
             {
                 product.Enable = true;
-                product.CreatedOn = DateTime.Today;
-                product.ModifiedOn = DateTime.Today;
-                product.CreatedBy = "Admin";
+                product.CreatedOn = DateTime.Now;
+                product.ModifiedOn = DateTime.Now;
+
                 context.Products.Add(product);
                 context.SaveChanges();
             }
@@ -55,6 +56,7 @@ namespace Service
                 productNew.ProductName = product.ProductName == null ? productNew.ProductName : product.ProductName;
                 productNew.Price = product.Price == 0 ? productNew.Price : product.Price;
                 productNew.Stock = product.Stock == 0 ? productNew.Stock : product.Stock;
+                productNew.ModifiedOn = DateTime.Now;
 
                 context.SaveChanges();
             }
@@ -65,7 +67,7 @@ namespace Service
             using (var context = new InvoiceContext())
             {
                 var product = context.Products.Find(id);
-                context.Products.Remove(product);
+                product.Enable = false;
                 context.SaveChanges();
 
             }

@@ -167,6 +167,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\UserTypeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -271,7 +272,7 @@
       <Name>Infraestructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\Service\Service.csproj">
-      <Project>{37E49A0E-F046-4F33-9ACC-5777539C0EF3}</Project>
+      <Project>{37e49a0e-f046-4f33-9acc-5777539c0ef3}</Project>
       <Name>Service</Name>
     </ProjectReference>
   </ItemGroup>
