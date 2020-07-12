@@ -15,3 +15,20 @@ C:\Users\JOHN\source\repos\InvoiceProject\Infraestructure\obj\Debug\Infraestruct
 C:\Users\JOHN\source\repos\InvoiceProject\Infraestructure\bin\Debug\Domain.dll.config
 C:\Users\JOHN\source\repos\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.Migrations.v1.resources
 C:\Users\JOHN\source\repos\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.csproj.GenerateResource.cache
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\Infraestructure.dll.config
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\Infraestructure.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\Infraestructure.pdb
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\Domain.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\EntityFramework.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\EntityFramework.SqlServer.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\Domain.pdb
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\Domain.dll.config
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\EntityFramework.xml
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\bin\Debug\EntityFramework.SqlServer.xml
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.csprojAssemblyReference.cache
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.Migrations.v1.resources
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.csproj.GenerateResource.cache
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.csproj.CoreCompileInputs.cache
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.pdb

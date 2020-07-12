@@ -16,3 +16,21 @@ C:\Users\JOHN\source\repos\InvoiceProject\Service\obj\Debug\Service.csproj.CoreC
 C:\Users\JOHN\source\repos\InvoiceProject\Service\obj\Debug\Service.csproj.CopyComplete
 C:\Users\JOHN\source\repos\InvoiceProject\Service\obj\Debug\Service.dll
 C:\Users\JOHN\source\repos\InvoiceProject\Service\obj\Debug\Service.pdb
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\Service.dll.config
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\Service.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\Service.pdb
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\Domain.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\EntityFramework.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\Infraestructure.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\Domain.pdb
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\Domain.dll.config
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\Infraestructure.pdb
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\Infraestructure.dll.config
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\EntityFramework.xml
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\obj\Debug\Service.csprojAssemblyReference.cache
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\obj\Debug\Service.csproj.CopyComplete
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\obj\Debug\Service.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Service\obj\Debug\Service.pdb

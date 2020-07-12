@@ -10,3 +10,15 @@ C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\EntityFramework.SqlSe
 C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\EntityFramework.xml
 C:\Users\JOHN\source\repos\InvoiceProject\Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\JOHN\source\repos\InvoiceProject\Domain\obj\Debug\Domain.csproj.CopyComplete
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\bin\Debug\Domain.dll.config
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\bin\Debug\Domain.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\bin\Debug\Domain.pdb
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\bin\Debug\EntityFramework.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\bin\Debug\EntityFramework.xml
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\obj\Debug\Domain.csproj.CopyComplete
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\obj\Debug\Domain.dll
+D:\TECSUP\cursos2\Desarrollos de Aplicaciónes Empresariales\Proyecto final\InvoiceProject\Domain\obj\Debug\Domain.pdb
