@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.HttpHelpers
 {
-    public class EResponse<T>
+    public class EResponseBase<T>
     {
         public int Code { get; set; }
 

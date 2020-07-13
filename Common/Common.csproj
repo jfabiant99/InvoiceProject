@@ -49,7 +49,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="HttpHelpers\ApiUrl.cs" />
     <Compile Include="HttpHelpers\ConstantUrl.cs" />
-    <Compile Include="HttpHelpers\EResponse.cs" />
+    <Compile Include="HttpHelpers\EResponseBase.cs" />
     <Compile Include="Numerable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\EntityMapper.cs" />

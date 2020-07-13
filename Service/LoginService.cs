@@ -1,36 +1,37 @@
-﻿using System;
+﻿using Common.HttpHelpers;
+using Domain;
+using Infraestructure;
+using Service.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Infraestructure;
-using Domain;
-using System.Data.Entity.Validation;
-
-
 
 namespace Service
 {
-    public class LoginService
+    public class LoginService : IServiceBase<User>
     {
-        public User GetByUser(User model)
+              
+        public EResponseBase<User> GetUser(User model)
         {
-            User user = null;
-
+            EResponseBase<User> response = new EResponseBase<User>();
             try
             {
                 using (var context = new InvoiceContext())
                 {
-                    user = context.Users.Where(x => x.Username == model.Username && x.Password == model.Password).FirstOrDefault();
+                    response.Object = context.Users.Where(x => x.Username == model.Username && x.Password == model.Password).FirstOrDefault();
                 }
+                response.IsSuccess = true;
+                response.Message = "Success";
+                return response;
             }
-            catch (Exception Ex)
+            catch (Exception ex)
             {
-                user.Username = "";
-                user.Password = "";
+                response.Message = ex.Message;
+                response.IsSuccess = false;
+                return response;
             }
-
-            return user;
         }
     }
 }

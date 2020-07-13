@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Common.HttpHelpers;
 using Domain;
 using InvoiceAPI.Models.Request;
 using InvoiceAPI.Models.Response;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Results;
 
 namespace InvoiceAPI.Controllers
 {
@@ -16,13 +18,11 @@ namespace InvoiceAPI.Controllers
     {
         private LoginService service = new LoginService();
 
+        // POST: api/Login
         [HttpPost]
-        public void Post([FromBody] User_Request_v1 request)
+        public JsonResult<EResponseBase<User>> Post(User user)
         {
-            User user = new User();
-            user.Username = request.Username;
-            user.Password = request.Password;
-            service.GetByUser(user);
+            return Json(service.GetUser(user));
         }
     }
 }
