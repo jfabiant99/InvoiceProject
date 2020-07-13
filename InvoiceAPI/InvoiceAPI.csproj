@@ -270,12 +270,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{AE02BD87-908A-44CA-AA34-B209B4EC0725}</Project>
+      <Project>{ae02bd87-908a-44ca-aa34-b209b4ec0725}</Project>
       <Name>Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Infraestructure\Infraestructure.csproj">
-      <Project>{1A86BC24-E06D-4B18-AE24-258B27020D3D}</Project>
-      <Name>Infraestructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\Service\Service.csproj">
       <Project>{37e49a0e-f046-4f33-9acc-5777539c0ef3}</Project>
