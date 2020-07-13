@@ -7,9 +7,11 @@ namespace Models.Request
 {
     public class Customer_Request
     {
-        public int CustomerID{ get; set; }
-        public  string Name { get; set; }
-        public string LastName { get; set; }
-        public DateTime Birthdate{ get; set; }
+        public int UserID{ get; set; }
+        public  string Username { get; set; }
+      //  public string Lastname { get; set; }
+        public int UserTypeID { get; set; }
+
+        //   public DateTime Birthdate{ get; set; }
     }
 }

@@ -3,11 +3,11 @@ namespace Models.Request
 {
     public class SalesInvoceDetail_Request
     {
-        public int SalesInvoceDetailID { get; set; }
-        public string Description { get; set; }
-        public decimal Price { get; set; }
+        public int DetailID { get; set; }
+        public decimal Prize { get; set; }
         public float Quantity { get; set; }
-        public int SalesInvoceID { get; set; }
+        public int InvoiceID { get; set; }
         public int ProductID { get; set; }
+        public int Client_UserID { get; set; }
     }
 }

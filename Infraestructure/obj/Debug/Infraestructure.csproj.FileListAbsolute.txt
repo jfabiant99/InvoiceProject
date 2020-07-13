@@ -66,3 +66,5 @@ C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Infraestructure\obj\
 C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
 C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.dll
 C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.pdb
+C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.Migrations.v2.resources
+C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Infraestructure\obj\Debug\Infraestructure.Migrations.v3.resources

@@ -15,6 +15,9 @@ namespace Domain
         public string Username { get; set; }
 
         [StringLength(150, MinimumLength = 3)]
+        public string Lastname { get; set; }
+
+        [StringLength(150, MinimumLength = 3)]
         public string Password { get; set; }
 
         //Conventions
