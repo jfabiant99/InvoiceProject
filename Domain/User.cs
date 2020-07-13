@@ -9,12 +9,13 @@ namespace Domain
 {
     public class User
     {
+        [Key]
         public int UserID { get; set; }
 
-        [StringLength(150, MinimumLength = 3)]
+        [StringLength(150)]
         public string Username { get; set; }
 
-        [StringLength(150, MinimumLength = 3)]
+        [StringLength(150)]
         public string Password { get; set; }
 
         //Conventions
