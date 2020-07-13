@@ -47,6 +47,7 @@ namespace Service
             {
                 var userNew = context.Users.Find(id);
                 userNew.Username = user.Username == null ? userNew.Username : user.Username;
+                userNew.Lastname = user.Lastname == null ? userNew.Lastname : user.Lastname;
                 userNew.Password = user.Password == null ? userNew.Password : user.Password;
                 userNew.UserTypeID = user.UserTypeID == 0 ? userNew.UserTypeID : user.UserTypeID;
 

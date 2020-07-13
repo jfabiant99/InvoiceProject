@@ -57,6 +57,14 @@
     <Compile Include="Migrations\202007101354297_v1.designer.cs">
       <DependentUpon>202007101354297_v1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007131508215_v2.cs" />
+    <Compile Include="Migrations\202007131508215_v2.designer.cs">
+      <DependentUpon>202007131508215_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007131849061_v3.cs" />
+    <Compile Include="Migrations\202007131849061_v3.designer.cs">
+      <DependentUpon>202007131849061_v3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -82,6 +90,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202007101354297_v1.resx">
       <DependentUpon>202007101354297_v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007131508215_v2.resx">
+      <DependentUpon>202007131508215_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007131849061_v3.resx">
+      <DependentUpon>202007131849061_v3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
