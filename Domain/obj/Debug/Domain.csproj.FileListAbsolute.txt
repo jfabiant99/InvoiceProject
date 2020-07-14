@@ -46,3 +46,14 @@ C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Domain\obj\Debug\Dom
 C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Domain\obj\Debug\Domain.csproj.CopyComplete
 C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Domain\obj\Debug\Domain.dll
 C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Domain\obj\Debug\Domain.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\bin\Debug\Domain.dll.config
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\bin\Debug\Domain.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\bin\Debug\Domain.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\obj\Debug\Domain.csproj.CopyComplete
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\obj\Debug\Domain.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\obj\Debug\Domain.pdb

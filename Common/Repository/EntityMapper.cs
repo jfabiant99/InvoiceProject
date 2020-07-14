@@ -16,13 +16,13 @@ namespace Common.Repository
 
         public EntityMapper()
         {
-            Mapper.CreateMap<EResponse<Product>, EResponse<Product_Response>>();
-            Mapper.CreateMap<EResponse<Product_Response>, EResponse<Product>>();
-            Mapper.CreateMap<EResponse<Product_Request>, EResponse<Product>>();
+            Mapper.CreateMap<EResponseBase<Product>, EResponseBase<Product_Response>>();
+            Mapper.CreateMap<EResponseBase<Product_Response>, EResponseBase<Product>>();
+            Mapper.CreateMap<EResponseBase<Product_Request>, EResponseBase<Product>>();
 
-            Mapper.CreateMap<EResponse<User>, EResponse<Customer_Response>>();
-            Mapper.CreateMap<EResponse<Customer_Response>, EResponse<User>>();
-            Mapper.CreateMap<EResponse<Customer_Request>, EResponse<User>>();
+            Mapper.CreateMap<EResponseBase<User>, EResponseBase<Customer_Response>>();
+            Mapper.CreateMap<EResponseBase<Customer_Response>, EResponseBase<User>>();
+            Mapper.CreateMap<EResponseBase<Customer_Request>, EResponseBase<User>>();
 
             Mapper.CreateMap<Invoice, SalesInvoce_Response>();
             Mapper.CreateMap<SalesInvoce_Response, Invoice>();

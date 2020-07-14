@@ -10,8 +10,9 @@ namespace InvoiceAPI
         public static void Register(HttpConfiguration config)
         {
             // Configuración y servicios de API web
-
             // Rutas de API web
+            config.EnableCors();
+
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
@@ -19,6 +20,7 @@ namespace InvoiceAPI
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+           
         }
     }
 }

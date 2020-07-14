@@ -10,12 +10,9 @@ namespace InvoiceAPI.Models.Response
     {
         public int DetailID { get; set; }
         public int Quantity { get; set; }
-        public int Prize { get; set; }
+        public int Price { get; set; }
         public Product Product { get; set; }
         public Invoice Invoice { get; set; }
-
-
-
 
     }
 }

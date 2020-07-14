@@ -13,18 +13,21 @@
                     {
                         DetailID = c.Int(nullable: false, identity: true),
                         Quantity = c.Int(nullable: false),
-                        Prize = c.Int(nullable: false),
+                        Price = c.Int(nullable: false),
                         ProductID = c.Int(nullable: false),
                         InvoiceID = c.Int(nullable: false),
-                        Client_UserID = c.Int(),
+                        Customer_UserID = c.Int(),
+                        Seller_UserID = c.Int(),
                     })
                 .PrimaryKey(t => t.DetailID)
-                .ForeignKey("dbo.Users", t => t.Client_UserID)
+                .ForeignKey("dbo.Users", t => t.Customer_UserID)
                 .ForeignKey("dbo.Invoices", t => t.InvoiceID, cascadeDelete: true)
                 .ForeignKey("dbo.Products", t => t.ProductID, cascadeDelete: true)
+                .ForeignKey("dbo.Users", t => t.Seller_UserID)
                 .Index(t => t.ProductID)
                 .Index(t => t.InvoiceID)
-                .Index(t => t.Client_UserID);
+                .Index(t => t.Customer_UserID)
+                .Index(t => t.Seller_UserID);
             
             CreateTable(
                 "dbo.Users",
@@ -32,6 +35,7 @@
                     {
                         UserID = c.Int(nullable: false, identity: true),
                         Username = c.String(maxLength: 150),
+                        Lastname = c.String(maxLength: 150),
                         Password = c.String(maxLength: 150),
                         UserTypeID = c.Int(nullable: false),
                     })
@@ -55,6 +59,7 @@
                         InvoiceID = c.Int(nullable: false, identity: true),
                         Date = c.DateTime(nullable: false),
                         InvoiceNumber = c.String(),
+                        Payed = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.InvoiceID);
             
@@ -78,12 +83,14 @@
         
         public override void Down()
         {
+            DropForeignKey("dbo.Details", "Seller_UserID", "dbo.Users");
             DropForeignKey("dbo.Details", "ProductID", "dbo.Products");
             DropForeignKey("dbo.Details", "InvoiceID", "dbo.Invoices");
-            DropForeignKey("dbo.Details", "Client_UserID", "dbo.Users");
+            DropForeignKey("dbo.Details", "Customer_UserID", "dbo.Users");
             DropForeignKey("dbo.Users", "UserTypeID", "dbo.UserTypes");
             DropIndex("dbo.Users", new[] { "UserTypeID" });
-            DropIndex("dbo.Details", new[] { "Client_UserID" });
+            DropIndex("dbo.Details", new[] { "Seller_UserID" });
+            DropIndex("dbo.Details", new[] { "Customer_UserID" });
             DropIndex("dbo.Details", new[] { "InvoiceID" });
             DropIndex("dbo.Details", new[] { "ProductID" });
             DropTable("dbo.Products");

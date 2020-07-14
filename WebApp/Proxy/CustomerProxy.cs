@@ -19,7 +19,7 @@ namespace Web.Proxy
         public string _urlBase = ConstantsUrl.UrlBase;
         public string _endPoint = $"{ConstantsUrl.Prefix}{ConstantsUrl.User}";
 
-        public async Task<EResponse<Customer_Response>> GetAll()
+        public async Task<EResponseBase<Customer_Response>> GetAll()
         {
             try
             {
@@ -30,11 +30,11 @@ namespace Web.Proxy
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     var result = await response.Content.ReadAsStringAsync();
-                    return JsonConvert.DeserializeObject<EResponse<Customer_Response>>(result);
+                    return JsonConvert.DeserializeObject<EResponseBase<Customer_Response>>(result);
                 }
                 else
                 {
-                    return new EResponse<Customer_Response>
+                    return new EResponseBase<Customer_Response>
                     {
                         Code = (int)response.StatusCode,
                         Message = "Error"
@@ -43,7 +43,7 @@ namespace Web.Proxy
             }
             catch (Exception ex)
             {
-                return new EResponse<Customer_Response>
+                return new EResponseBase<Customer_Response>
                 {
                     Code = 404,
                     Message = ex.Message
@@ -51,7 +51,7 @@ namespace Web.Proxy
             }
         }
 
-        public async Task<EResponse<Customer_Response>> Get(int id)
+        public async Task<EResponseBase<Customer_Response>> Get(int id)
         {
             var client = new HttpClient();
             client.BaseAddress = new Uri(_urlBase);
@@ -61,11 +61,11 @@ namespace Web.Proxy
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var result = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<EResponse<Customer_Response>>(result);
+                return JsonConvert.DeserializeObject<EResponseBase<Customer_Response>>(result);
             }
             else
             {
-                return new EResponse<Customer_Response>
+                return new EResponseBase<Customer_Response>
                 {
                     Code = (int)response.StatusCode,
                     Message = "Error"
@@ -74,7 +74,7 @@ namespace Web.Proxy
         }
 
 
-        public async Task<EResponse<Customer_Response>> Add(Customer_Request model)
+        public async Task<EResponseBase<Customer_Response>> Add(Customer_Request model)
         {
             var request = JsonConvert.SerializeObject(model);
             var content = new StringContent(request, Encoding.UTF8, "application/json");
@@ -88,10 +88,10 @@ namespace Web.Proxy
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var result = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<EResponse<Customer_Response>>(result);
+                return JsonConvert.DeserializeObject<EResponseBase<Customer_Response>>(result);
             }
 
-            return new EResponse<Customer_Response>
+            return new EResponseBase<Customer_Response>
             {
                 IsSuccess = false,
                 Code = (int)response.StatusCode,
@@ -99,7 +99,7 @@ namespace Web.Proxy
             };
 
         }
-        public async Task<EResponse<Customer_Response>> Update(Customer_Request model)
+        public async Task<EResponseBase<Customer_Response>> Update(Customer_Request model)
         {
 
             var request = JsonConvert.SerializeObject(model);
@@ -115,16 +115,16 @@ namespace Web.Proxy
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var result = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<EResponse<Customer_Response>>(result);
+                return JsonConvert.DeserializeObject<EResponseBase<Customer_Response>>(result);
             }
-            return new EResponse<Customer_Response>
+            return new EResponseBase<Customer_Response>
             {
                 IsSuccess = false,
                 Code = (int)response.StatusCode,
                 Message = "Error"
             };
         }
-        public async Task<EResponse<Customer_Response>> Delete(int id)
+        public async Task<EResponseBase<Customer_Response>> Delete(int id)
         {
             var client = new HttpClient();
             client.BaseAddress = new Uri(_urlBase);
@@ -135,11 +135,11 @@ namespace Web.Proxy
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var result = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<EResponse<Customer_Response>>(result);
+                return JsonConvert.DeserializeObject<EResponseBase<Customer_Response>>(result);
             }
             else
             {
-                return new EResponse<Customer_Response>
+                return new EResponseBase<Customer_Response>
                 {
                     IsSuccess = false,
                     Code = (int)response.StatusCode,

@@ -70,3 +70,26 @@ C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Service\obj\Debug\Se
 C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Service\obj\Debug\Service.csproj.CopyComplete
 C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Service\obj\Debug\Service.dll
 C:\Users\USUARIO\OneDrive\Escritorio\fronend\InvoiceProject\Service\obj\Debug\Service.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\obj\Debug\Service.csprojAssemblyReference.cache
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\obj\Debug\Service.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\obj\Debug\Service.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Service.dll.config
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Service.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Service.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Common.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Domain.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\EntityFramework.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Infraestructure.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Models.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\AutoMapper.dll
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Common.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Domain.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Domain.dll.config
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Infraestructure.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Infraestructure.dll.config
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\EntityFramework.xml
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\bin\Debug\Models.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Service\obj\Debug\Service.csproj.CopyComplete

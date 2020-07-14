@@ -16,7 +16,7 @@ namespace Web.Proxy
         private string _urlBase = ConstantsUrl.UrlBase;
         private string _endPoint = $"{ConstantsUrl.Prefix}{ConstantsUrl.Invoice}";
 
-        public async Task<EResponse<SalesInvoiceSP_Response>> GetAll()
+        public async Task<EResponseBase<SalesInvoiceSP_Response>> GetAll()
         {
             try
             {
@@ -26,18 +26,18 @@ namespace Web.Proxy
                 var answer = await response.Content.ReadAsStringAsync();
                 if (!response.IsSuccessStatusCode)
                 {
-                    return new EResponse<SalesInvoiceSP_Response>
+                    return new EResponseBase<SalesInvoiceSP_Response>
                     {
                         Code = 404,
                         Message = "Error"
                     };
                 }
-                var obj = JsonConvert.DeserializeObject<EResponse<SalesInvoiceSP_Response>>(answer);
+                var obj = JsonConvert.DeserializeObject<EResponseBase<SalesInvoiceSP_Response>>(answer);
                 return obj;
             }
             catch (Exception ex)
             {
-                return new EResponse<SalesInvoiceSP_Response>
+                return new EResponseBase<SalesInvoiceSP_Response>
                 {
                     Code = 404,
                     Message = ex.Message
@@ -45,7 +45,7 @@ namespace Web.Proxy
             }
         }
 
-        public async Task<EResponse<SalesInvoce_Response>> Get(int id)
+        public async Task<EResponseBase<SalesInvoce_Response>> Get(int id)
         {
             var client = new HttpClient();
             client.BaseAddress = new Uri(_urlBase);
@@ -55,11 +55,11 @@ namespace Web.Proxy
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var result = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<EResponse<SalesInvoce_Response>>(result);
+                return JsonConvert.DeserializeObject<EResponseBase<SalesInvoce_Response>>(result);
             }
             else
             {
-                return new EResponse<SalesInvoce_Response>
+                return new EResponseBase<SalesInvoce_Response>
                 {
                     Code = (int)response.StatusCode,
                     Message = "Error"
@@ -68,7 +68,7 @@ namespace Web.Proxy
         }
 
 
-        public async Task<EResponse<SalesInvoce_Response>> Add(SalesInvoce_Request model)
+        public async Task<EResponseBase<SalesInvoce_Response>> Add(SalesInvoce_Request model)
         {
             var request = JsonConvert.SerializeObject(model);
             var content = new StringContent(request, Encoding.UTF8, "application/json");
@@ -82,11 +82,11 @@ namespace Web.Proxy
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var result = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<EResponse<SalesInvoce_Response>>(result);
+                return JsonConvert.DeserializeObject<EResponseBase<SalesInvoce_Response>>(result);
             }
             else
             {
-                return new EResponse<SalesInvoce_Response>
+                return new EResponseBase<SalesInvoce_Response>
                 {
                     IsSuccess = false,
                     Code = (int)response.StatusCode,
@@ -94,7 +94,7 @@ namespace Web.Proxy
                 };
             }
         }
-        public async Task<EResponse<SalesInvoce_Response>> Add(SalesInvoiceRegister_Request model)
+        public async Task<EResponseBase<SalesInvoce_Response>> Add(SalesInvoiceRegister_Request model)
         {
             var request = JsonConvert.SerializeObject(model);
             var content = new StringContent(request, Encoding.UTF8, "application/json");
@@ -107,16 +107,16 @@ namespace Web.Proxy
             var answer = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
             {
-                return new EResponse<SalesInvoce_Response>
+                return new EResponseBase<SalesInvoce_Response>
                 {
                     IsSuccess = false,
                     Code = (int)response.StatusCode,
                     Message = "Error"
                 };
             }
-            return JsonConvert.DeserializeObject<EResponse<SalesInvoce_Response>>(answer);
+            return JsonConvert.DeserializeObject<EResponseBase<SalesInvoce_Response>>(answer);
         }
-        public async Task<EResponse<SalesInvoce_Response>> Update(SalesInvoce_Request model)
+        public async Task<EResponseBase<SalesInvoce_Response>> Update(SalesInvoce_Request model)
         {
             var request = JsonConvert.SerializeObject(model);
             var content = new StringContent(request, Encoding.UTF8, "application/json");
@@ -130,11 +130,11 @@ namespace Web.Proxy
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var result = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<EResponse<SalesInvoce_Response>>(result);
+                return JsonConvert.DeserializeObject<EResponseBase<SalesInvoce_Response>>(result);
             }
             else
             {
-                return new EResponse<SalesInvoce_Response>
+                return new EResponseBase<SalesInvoce_Response>
                 {
                     IsSuccess = false,
                     Code = (int)response.StatusCode,
@@ -142,7 +142,7 @@ namespace Web.Proxy
                 };
             }
         }
-        public async Task<EResponse<SalesInvoce_Response>> Delete(int id)
+        public async Task<EResponseBase<SalesInvoce_Response>> Delete(int id)
         {
             var client = new HttpClient();
             client.BaseAddress = new Uri(_urlBase);
@@ -153,11 +153,11 @@ namespace Web.Proxy
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var result = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<EResponse<SalesInvoce_Response>>(result);
+                return JsonConvert.DeserializeObject<EResponseBase<SalesInvoce_Response>>(result);
             }
             else
             {
-                return new EResponse<SalesInvoce_Response>
+                return new EResponseBase<SalesInvoce_Response>
                 {
                     IsSuccess = false,
                     Code = (int)response.StatusCode,

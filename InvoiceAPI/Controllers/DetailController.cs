@@ -22,7 +22,7 @@ namespace InvoiceAPI.Controllers
                           {
                               DetailID = c.DetailID,
                               Quantity = c.Quantity,
-                              Prize = c.Prize,
+                              Price = c.Price,
                               Product = c.Product,
                               Invoice = c.Invoice
                           }).ToList();
@@ -34,7 +34,7 @@ namespace InvoiceAPI.Controllers
             Detail_Response_v1 response = new Detail_Response_v1();
             response.DetailID = detail.DetailID;
             response.Quantity = detail.Quantity;
-            response.Prize = detail.Prize;
+            response.Price = detail.Price;
             response.Product = detail.Product;
             response.Invoice = detail.Invoice;
 
@@ -44,7 +44,7 @@ namespace InvoiceAPI.Controllers
         {
             Detail detail = new Detail();
             detail.Quantity = request.Quantity;
-            detail.Prize = request.Prize;
+            detail.Price = request.Price;
             
             service.Insert(detail);
         }

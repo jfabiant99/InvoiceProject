@@ -47,10 +47,10 @@ namespace Service
             {
                 var detailNew = context.Details.Find(id);
                 detailNew.Quantity = detail.Quantity == 0 ? detailNew.Quantity : detail.Quantity;
-                detailNew.Prize = detail.Prize == 0 ? detailNew.Prize : detail.Prize;
+                detailNew.Price = detail.Price == 0 ? detailNew.Price : detail.Price;
                 detailNew.ProductID = detail.ProductID == 0 ? detailNew.ProductID : detail.ProductID;
                 detailNew.InvoiceID = detail.InvoiceID == 0 ? detailNew.InvoiceID : detail.InvoiceID;
-                detailNew.Client = detail.Client == null ? detailNew.Client : detail.Client;
+                detailNew.Seller = detail.Seller == null ? detailNew.Seller : detail.Seller;
 
 
                 context.SaveChanges();
