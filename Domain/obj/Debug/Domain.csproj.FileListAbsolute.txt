@@ -57,3 +57,4 @@ C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empres
 C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\obj\Debug\Domain.csproj.CopyComplete
 C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\obj\Debug\Domain.dll
 C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\obj\Debug\Domain.pdb
+C:\Users\Orlando Camavilca\Documents\camavilca\desarrollo de aplicaciones empresariales\InvoiceProject\Domain\obj\Debug\Domain.csprojAssemblyReference.cache

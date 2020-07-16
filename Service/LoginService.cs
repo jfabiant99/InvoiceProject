@@ -18,12 +18,28 @@ namespace Service
             EResponseBase<User> response = new EResponseBase<User>();
             try
             {
+                var usuario = new Object();
                 using (var context = new InvoiceContext())
                 {
-                    response.Object = context.Users.Where(x => x.Username == model.Username && x.Password == model.Password).FirstOrDefault();
+                    usuario = context.Users
+                        .Where(x => x.Username == model.Username && x.Password == model.Password)
+                        .FirstOrDefault();
+                    response.Object = context.Users
+                        .Where(x => x.Username == model.Username && x.Password == model.Password)
+                        .FirstOrDefault();
+                    
                 }
-                response.IsSuccess = true;
-                response.Message = "Success";
+                if (usuario == null)
+                {
+                    response.IsSuccess = false;
+                    response.Message = "Sus credenciales no existen";
+                }
+                else
+                {
+                    response.IsSuccess = true;
+                    response.Message = "Bienvenido a la app";
+                }
+              
                 return response;
             }
             catch (Exception ex)

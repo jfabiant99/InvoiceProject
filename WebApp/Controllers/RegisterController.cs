@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace WebApp.Controllers
 {
-    public class ProductController : Controller
+    public class RegisterController : Controller
     {
-        // GET: Product
+        // GET: Register
         public ActionResult Index()
         {
             return View();
