@@ -1,24 +1,24 @@
 ﻿
 @{
-    ViewBag.Title = "Lista de Productos";
+    ViewBag.Title = "Index";
 }
-
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <div class="row">
+            <h6 class="col-md-10 m-0 font-weight-bold text-primary">Lista de Vendedores</h6>
             <button type="button" class="col-md-2 btn btn-primary" onclick="lanzar()">
-                Nuevo Produto
+                Nuevo Vendedor
             </button>
         </div>
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
-                        <th width="20%">Nombre</th>
-                        <th width="5%">Stock</th>
-                        <th width="5%">Precio</th>
+                        <th width="40%">Nombre</th>
+                        <th width="25%">Email</th>
+                        <th width="25%">Fecha de registro</th>
                         <th width="10%">Accion</th>
                     </tr>
                 </thead>
@@ -28,31 +28,35 @@
         </div>
     </div>
 </div>
-
-
+<!-- Button trigger modal -->
+<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Registrar Cliente</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Registrar Vendedor</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <form id="form1">
                 <div class="modal-body">
-                    <input type="hidden" value="" name="productID" id="productID" />
+                    <input type="hidden" value="" name="sellerID" id="sellerID" />
                     <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" class="form-control" id="txtNombreProducto" name="name" placeholder="">
+                        <label for="name">Nombres</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="">
                     </div>
                     <div class="form-group">
-                        <label for="price">Precio</label>
-                        <input type="number" class="form-control" name="price" id="txtPrecioProducto" placeholder="">
+                        <label for="lastname">Apellidos</label>
+                        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="">
                     </div>
                     <div class="form-group">
-                        <label for="stock">Stock</label>
-                        <input type="number" class="form-control" name="stock" id="txtStockProducto" placeholder="">
+                        <label for="lastname">Correo</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Fecha de Nacimiento</label>
+                        <input type="text" class="form-control" name="birthdate" id="birthdate" placeholder="">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -63,21 +67,24 @@
         </div>
     </div>
 </div>
-
 @section scripts {
     <script type="text/javascript">
+
         $(document).ready(function () {
+            $("#birthdate").datepicker({
+                changeYear: true
+            });
 
             var obtener_data_editar = function (tbody, table) {
                 $(tbody).on("click", "button.editar", function () {
                     var data = table.row($(this).parents("tr")).data();
                     console.log(data)
-                    $("#exampleModalLabel").text("Actualizar Producto");
-                    $("#productID").val(data.ProductID);
-                    $("#txtNombreProducto").val(data.ProductName);
-                    $("#txtStockProducto").val(data.Stock);
-                    $("#txtPrecioProducto").val(data.Price);
-                    $("#remarks").val(data.Remarks);
+                    $("#exampleModalLabel").text("Actualizar Vendedor");
+                    $("#sellerID").val(data.SellerID);
+                    $("#name").val(data.Name);
+                    $("#lastname").val(data.LastName);
+                    $("#email").val(data.Email);
+                    $("#birthdate").val(moment(data.Birthdate).format("MM/DD/YYYY"));
                     $("#exampleModal").modal('show');
                 });
             }
@@ -88,12 +95,12 @@
             }
 
             var limpiarForm = function () {
-                $("#exampleModalLabel").text("Registar Producto");
-                $("#productID").val("");
-                $("#txtNombreProducto").val("");
-                $("#txtStockProducto").val("");
-                $("#txtPrecioProducto").val("");
-                $("#remarks").val("");
+                $("#exampleModalLabel").text("Registar Vendedor");
+                $("#sellerID").val("");
+                $("#name").val("");
+                $("#lastname").val("");
+                $("#email").val("");
+                $("#birthdate").val("");
             }
 
             var obtener_data_eliminar = function (tbody, table) {
@@ -111,9 +118,9 @@
                     }).then((result) => {
                         if (result.value) {
                             $.ajax({
-                                url: 'https://localhost:44378/api/Product/Delete',
+                                url: '/Seller/Delete',
                                 type: 'POST',
-                                data: { ProductID: data.ProductID },
+                                data: { id: data.SellerID },
                                 success: function (result) {
                                     cargarLista();
                                     Swal.fire('Eliminado!', 'El registro fue eliminado correctamente.', 'success');
@@ -126,8 +133,11 @@
 
             var cargarLista = function () {
                 $.ajax({
-                    url: "https://localhost:44378/api/Product/Get",
+                    url: "/Seller/GetAll",
                     success: function (data) {
+                        data.forEach(elm =>
+                            elm.CreateAt = new Date(parseInt(elm.CreateAt.substr(6))).toDateString()
+                        );
                         var table = $('#dataTable').DataTable({
                             destroy: true,
                             "language": {
@@ -177,9 +187,9 @@
                             },
                             data: data,
                             columns: [
-                                { "data": "ProductName" },
-                                { "data": "Stock" },
-                                { "data": "Price" },
+                                { "data": "FullName" },
+                                { "data": "Email" },
+                                { "data": "CreateAt" },
                                 {
                                     "defaultContent": "<button type='button' class='btn btn-success btn-circle editar mr-2'><i class='fas fa-pencil-alt'></i></button>" +
                                         "<button class='btn btn-danger btn-circle eliminar mr-2'><i class='fas fa-trash'></i></button>"
@@ -196,41 +206,43 @@
 
             $("#form1").on("submit", function () {
                 event.preventDefault();
-                let idProducto = $('#productID').val();
-                let URI = null;
-
-                console.log(idProducto)
-
-                if (idProducto) URI = "https://localhost:44378/api/Product/Update";
-                else URI = "https://localhost:44378/api/Product/Post";
-
-
 
                 let data = {
-                    ProductID: $('#productID').val() ? $('#productID').val() : null,
-                    ProductName: $('#txtNombreProducto').val(),
-                    Price: $('#txtPrecioProducto').val(),
-                    Stock: $('#txtStockProducto').val(),
+                    Username: $('#txtUsername').val(),
                 }
+
                 $.ajax({
-                    url: URI,
+                    url: '/Seller/Add',
                     type: 'POST',
-                    data: data,
+                    data: $(this).serialize(),
                     success: function (result) {
-                        limpiarForm();
-                        $("#exampleModal").modal('hide');
-                        Swal.fire('Info!', 'Proceso realizado correctamente.', 'success');
-                        setTimeout(function () {
-                            location.reload();
-                        }, 3000)
+                        if (result.Result.IsSuccess) {
+                            limpiarForm();
+                            $("#exampleModal").modal('hide');
+                            Swal.fire('Info!', 'Proceso realizado correctamente.', 'success');
+                            setTimeout(function () {
+                                location.reload();
+                            }, 3000)
+                        } else {
+                            limpiarForm();
+                            $("#exampleModal").modal('hide');
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!'
+                            })
+                        }
+
                     }
                 });
             });
-
-
-
             cargarLista();
         });
+
+        function DateFormat(data) {
+            data.forEach(elem =>
+                elem.CreateAt = new Date(parseInt(elem.CreateAt.substr(6))).toDateString());
+            return data;
+        }
     </script>
 }
-

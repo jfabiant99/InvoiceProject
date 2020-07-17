@@ -66,10 +66,10 @@ namespace Service
         {
             using (var context = new InvoiceContext())
             {
-                var product = context.Products.Find(id);
+
+                Product product = context.Products.Find(id);
                 product.Enable = false;
                 context.SaveChanges();
-
             }
         }
 

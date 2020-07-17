@@ -8,9 +8,11 @@ using System.Web.Http;
 using Domain;
 using InvoiceAPI.Models.Response;
 using InvoiceAPI.Models.Request;
+using System.Web.Http.Cors;
 
 namespace InvoiceAPI.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class InvoiceController : ApiController
     {
         private InvoiceService service = new InvoiceService();

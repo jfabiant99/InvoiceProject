@@ -22,6 +22,7 @@ namespace Service
             return users;
         }
 
+
         public User GetById(int id)
         {
             User user = null;

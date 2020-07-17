@@ -4,11 +4,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using Domain;
 using Service;
 
 namespace InvoiceAPI.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class UserTypeController : ApiController
     {
         private UserTypeService service = new UserTypeService();

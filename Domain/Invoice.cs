@@ -13,8 +13,6 @@ namespace Domain
         public int InvoiceID { get; set; }
         public DateTime Date { get; set; }
         public string InvoiceNumber { get; set; }
-        // 1 Invoice have many details
-        public bool Payed { get; set; }
         public List<Detail> Details { get; set; }
     }
 }
